@@ -1,29 +1,37 @@
 {
-  "name": "event-management-api",
-  "version": "0.1.0",
-  "description": "Ehitan selle rakenduse koolitöö raames. Rakendus on loodud Node.js ja Express raamistikus ning selle eesmärk on pakkuda kasutajatele võimalust hallata erinevaid sündmusi, sealhulgas registreeruda, vaadata sündmuste ajakava ja saada teavitusi.",
-  "type": "module",
-  "scripts": {
-    "server": "tsx --env-file=.env src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "typecheck": "tsc --noEmit"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ReyReyBlue/m6-event-manager-windows-.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ReyReyBlue/m6-event-manager-windows-/issues"
-  },
-  "homepage": "https://github.com/ReyReyBlue/m6-event-manager-windows-#readme",
-  "dependencies": {
-    "express": "^5.3.0"
-  },
-  "devDependencies": {
-    "@types/express": "^5.0.6",
-    "@types/node": "^26.6.6",
-    "tsx": "^4.23.15",
-    "typescript": "^7.0.2"
-  }
+    "name": "event-management-api",
+    "version": "0.1.0",
+    "description": "Ehitan selle rakenduse koolitöö raames. Rakendus on loodud Node.js ja Express raamistikus ning selle eesmärk on pakkuda kasutajatele võimalust hallata erinevaid sündmusi, sealhulgas registreeruda, vaadata sündmuste ajakava ja saada teavitusi.",
+    "type": "module",
+    "engines": {
+        "node": ">=22"
+    },
+    "scripts": {
+        "server": "tsx --env-file=.env src/server.ts",
+        "build": "tsc",
+        "start": "node dist/server.js",
+        "typecheck": "tsc --noEmit",
+        "lint": "oxlint",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ReyReyBlue/m6-event-manager-windows-.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ReyReyBlue/m6-event-manager-windows-/issues"
+    },
+    "homepage": "https://github.com/ReyReyBlue/m6-event-manager-windows-#readme",
+    "dependencies": {
+        "express": "^5.3.0"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.6",
+        "@types/node": "^26.6.6",
+        "oxlint": "^1.94.0",
+        "prettier": "^3.10.1",
+        "tsx": "^4.23.15",
+        "typescript": "^7.0.2"
+    }
 }

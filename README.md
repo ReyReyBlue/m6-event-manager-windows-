@@ -23,7 +23,15 @@ Issued tehakse järjekorras ja iga hilisem sõltub varasematest.
 
 #6: npm run server
 
--------------------------------------------------
+#7: npm install -D prettier oxlint
+
+#8: npx oxlint --init
+
+#9: npm run format
+
+#10: npm run lint
+
+---
 
 Kood on kaustades domeeni kaupa, mitte kihi kaupa. Kõik ürituse failid on koos, mitte "kõik controllerid ühes kaustas":
 
