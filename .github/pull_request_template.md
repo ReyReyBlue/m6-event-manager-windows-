@@ -1,6 +1,6 @@
 ## Mis muutus
 
-Closes #
+Closes #4
 
 ## Kuidas kontrollida
 
