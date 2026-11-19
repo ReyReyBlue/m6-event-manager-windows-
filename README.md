@@ -33,6 +33,12 @@ Issued tehakse järjekorras ja iga hilisem sõltub varasematest.
 
 #11: npm run format:check
 
+#12: docker --version
+
+#13: docker compose version
+
+#14: docker compose up -d
+
 ---
 
 Kood on kaustades domeeni kaupa, mitte kihi kaupa. Kõik ürituse failid on koos, mitte "kõik controllerid ühes kaustas":
