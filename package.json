@@ -1,0 +1,33 @@
+{
+  "name": "m6-event-manager-windows-",
+  "version": "1.0.0",
+  "description": "Ehitad selle rakenduse ise, samm-sammult.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "tsx --env-file=.env src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReyReyBlue/m6-event-manager-windows-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReyReyBlue/m6-event-manager-windows-/issues"
+  },
+  "homepage": "https://github.com/ReyReyBlue/m6-event-manager-windows-#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
