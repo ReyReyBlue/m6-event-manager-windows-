@@ -1,6 +1,8 @@
 # Piletirakenduse backend
 
-Ehitan selle rakenduse ise, samm-sammult.
+Ehitan selle rakenduse koolitöö raames. Rakendus on loodud Node.js ja Express raamistikus ning selle eesmärk on pakkuda kasutajatele võimalust hallata erinevaid sündmusi, sealhulgas registreeruda, vaadata sündmuste ajakava ja saada teavitusi.
+
+Issued tehakse järjekorras ja iga hilisem sõltub varasematest.
 
 **Alusta siit: [ALUSTA.md](ALUSTA.md)**
 
@@ -8,6 +10,7 @@ Ehitan selle rakenduse ise, samm-sammult.
 > Pane tähele, mida meil selle projekti jaoks vaja läheb ning valmista oma arenduskeskkond vastavalt sellele. Nimekirjas on Docker, NodeJS versioonid ja palju muud.
 
 **Käsud**
+
 #1: node -v
 
 #2: npm init -y
@@ -19,3 +22,22 @@ Ehitan selle rakenduse ise, samm-sammult.
 #5: npm run typecheck
 
 #6: npm run server
+
+-------------------------------------------------
+
+Kood on kaustades domeeni kaupa, mitte kihi kaupa. Kõik ürituse failid on koos, mitte "kõik controllerid ühes kaustas":
+
+src/
+├── event/                 ← üks domeen = üks kaust
+│   ├── event.routes.ts        aadressid + ühendused (DI)
+│   ├── event.controller.ts    HTTP: valideeri, kutsu service'it, tee vastus
+│   ├── event.service.ts       äriloogika
+│   ├── event.repository.ts    ainus koht, kus on SQL
+│   └── dto/                   päringu ja vastuse kujud
+├── shared/                ← mitme domeeni ühine (vead, valideerimine)
+├── config/                ← keskkonnamuutujad
+├── db/                    ← andmebaasi ühendus ja skeemid
+├── scripts/               ← käsurea skriptid (seeder, make-admin)
+├── app.ts
+└── server.ts
+tests/                     ← peegeldab src/ struktuuri

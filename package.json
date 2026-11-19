@@ -1,8 +1,7 @@
 {
-  "name": "m6-event-manager-windows-",
-  "version": "1.0.0",
-  "description": "Ehitad selle rakenduse ise, samm-sammult.",
-  "main": "index.js",
+  "name": "event-management-api",
+  "version": "0.1.0",
+  "description": "Ehitan selle rakenduse koolitöö raames. Rakendus on loodud Node.js ja Express raamistikus ning selle eesmärk on pakkuda kasutajatele võimalust hallata erinevaid sündmusi, sealhulgas registreeruda, vaadata sündmuste ajakava ja saada teavitusi.",
   "type": "module",
   "scripts": {
     "server": "tsx --env-file=.env src/server.ts",
@@ -14,9 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/ReyReyBlue/m6-event-manager-windows-.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ReyReyBlue/m6-event-manager-windows-/issues"
   },
