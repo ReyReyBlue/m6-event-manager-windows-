@@ -31,6 +31,8 @@ Issued tehakse järjekorras ja iga hilisem sõltub varasematest.
 
 #10: npm run lint
 
+#11: npm run format:check
+
 ---
 
 Kood on kaustades domeeni kaupa, mitte kihi kaupa. Kõik ürituse failid on koos, mitte "kõik controllerid ühes kaustas":

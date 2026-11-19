@@ -4,15 +4,15 @@ const PORT = 3000;
 
 const server = app.listen(PORT, (error) => {
     if (error) throw error;
-    console.log(`Server running at http://localhost:${PORT}`);
+    
 });
 
 let isShuttingDown = false;
 
-async function shutdown(signal: string) {
+async function shutdown(_signal: string) {
     if (isShuttingDown) return;
     isShuttingDown = true;
-    console.log(`${signal} received, shutting down...`);
+    
 
     setTimeout(() => process.exit(1), 8000).unref();
 
