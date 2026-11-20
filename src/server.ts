@@ -1,11 +1,18 @@
 import app from "./app.js";
 
 import {env} from "./config/env.js";
+
+import {pool} from "./db/index.js";
+
+await pool.query("SELECT 1");
+
 // ...
 const server = app.listen(env.PORT, (error) => {
     if (error) throw error;
     
 });
+
+
 
 let isShuttingDown = false;
 

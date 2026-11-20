@@ -41,11 +41,20 @@ Issued tehakse järjekorras ja iga hilisem sõltub varasematest.
 
 #15: npm install zod
 
+#16: npm install drizzle-orm pg
+
+#17: npm install -D drizzle-kit @types/pg
+
 ---
 
 **Seadistus**
 
-
+DATABASE_USER=
+DATABASE_PASSWORD=
+DATABASE_NAME=
+PORT=
+NODE_ENV=
+DATABASE_URL=
 
 ---
 Kood on kaustades domeeni kaupa, mitte kihi kaupa. Kõik ürituse failid on koos, mitte "kõik controllerid ühes kaustas":
