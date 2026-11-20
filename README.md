@@ -45,6 +45,14 @@ Issued tehakse järjekorras ja iga hilisem sõltub varasematest.
 
 #17: npm install -D drizzle-kit @types/pg
 
+#18: npm run auth:generate
+
+#19: npm run db:generate -- --name=create_auth_tables  
+
+#20: npm run db:migrate
+
+// kui auth.ts seadistus muutub, korda auth:generate → db:generate → db:migrate
+
 ---
 
 **Seadistus**
@@ -59,6 +67,8 @@ DATABASE_URL=
 ---
 Kood on kaustades domeeni kaupa, mitte kihi kaupa. Kõik ürituse failid on koos, mitte "kõik controllerid ühes kaustas":
 
-![alt text](image.png)
+![alt text](images/image.png)
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
+
+![alt text](images/image-2.png)
