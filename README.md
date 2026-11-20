@@ -39,8 +39,15 @@ Issued tehakse järjekorras ja iga hilisem sõltub varasematest.
 
 #14: docker compose up -d
 
+#15: npm install zod
+
 ---
 
+**Seadistus**
+
+
+
+---
 Kood on kaustades domeeni kaupa, mitte kihi kaupa. Kõik ürituse failid on koos, mitte "kõik controllerid ühes kaustas":
 
 ![alt text](image.png)
